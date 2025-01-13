@@ -1,14 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://dwg6pw6sf66n4"]
 
-[ext_resource type="Texture2D" uid="uid://cnxuntx18o7ya" path="res://icon.svg" id="1_t7wmf"]
+[ext_resource type="Texture2D" uid="uid://d3cusdsfdkuck" path="res://Skærmbillede 2024-04-22 221100.png" id="1_pw2tk"]
 
 [node name="Icon" type="Sprite2D"]
 position = Vector2(363, 230)
 rotation = 0.785398
-texture = ExtResource("1_t7wmf")
-
-[node name="Panel" type="Panel" parent="."]
-offset_left = -110.0
-offset_top = -88.0
-offset_right = 78.0
-offset_bottom = 79.0
+texture = ExtResource("1_pw2tk")
