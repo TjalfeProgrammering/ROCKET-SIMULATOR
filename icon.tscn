@@ -6,3 +6,9 @@
 position = Vector2(363, 230)
 rotation = 0.785398
 texture = ExtResource("1_t7wmf")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -110.0
+offset_top = -88.0
+offset_right = 78.0
+offset_bottom = 79.0
