@@ -3,5 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://cnxuntx18o7ya" path="res://icon.svg" id="1_t7wmf"]
 
 [node name="Icon" type="Sprite2D"]
-position = Vector2(103, 57)
+position = Vector2(69, 67)
 texture = ExtResource("1_t7wmf")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -110.0
+offset_top = -88.0
+offset_right = 78.0
+offset_bottom = 79.0
