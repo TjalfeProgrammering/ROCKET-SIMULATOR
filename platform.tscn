@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://g620ogclnc8t"]
+
+[ext_resource type="Texture2D" uid="uid://d2xxamuv2b7wi" path="res://moon surface.jpg" id="1_wbyuo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0c2p3"]
+size = Vector2(73162, 786)
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3801, 619)
+shape = SubResource("RectangleShape2D_0c2p3")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(-1714, 142)
+scale = Vector2(15.6144, -2.85379)
+texture = ExtResource("1_wbyuo")
+
+[node name="MoonSurface" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(7481, 169)
+scale = Vector2(14.9183, 2.85248)
+texture = ExtResource("1_wbyuo")
+
+[node name="MoonSurface" type="Sprite2D" parent="."]
+position = Vector2(-7347, 787.75)
+scale = Vector2(15.3366, 2.93081)
+texture = ExtResource("1_wbyuo")
+
+[node name="MoonSurface2" type="Sprite2D" parent="."]
+position = Vector2(24148, 745.25)
+scale = Vector2(27.366, 2.56266)
+texture = ExtResource("1_wbyuo")
+
+[node name="MoonSurface3" type="Sprite2D" parent="."]
+position = Vector2(-18686, 802.75)
+scale = Vector2(21.7288, 3.00914)
+texture = ExtResource("1_wbyuo")
+
+[node name="MoonSurface4" type="Sprite2D" parent="."]
+position = Vector2(-29619, 916.25)
+scale = Vector2(14.0425, 3.45561)
+texture = ExtResource("1_wbyuo")
+
+[node name="MoonSurface5" type="Sprite2D" parent="."]
+position = Vector2(36741.5, 679.25)
+scale = Vector2(14.1029, 2.40601)
+texture = ExtResource("1_wbyuo")

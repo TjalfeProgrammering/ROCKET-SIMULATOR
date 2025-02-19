@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwh84s8rk7thi"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_0fqle"]
+[ext_resource type="PackedScene" uid="uid://jlxutlyjlnns" path="res://player.tscn" id="1_ttfep"]
+[ext_resource type="PackedScene" uid="uid://g620ogclnc8t" path="res://platform.tscn" id="2_w8ku3"]
+[ext_resource type="PackedScene" uid="uid://dyugjgquu7ot7" path="res://background.tscn" id="3_nxigg"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0fqle")
+
+[node name="RigidBody2D" parent="." instance=ExtResource("1_ttfep")]
+top_level = true
+position = Vector2(7982, -11092)
+rotation = -0.257908
+scale = Vector2(0.30862, 0.28673)
+
+[node name="Camera2D" type="Camera2D" parent="RigidBody2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("2_w8ku3")]
+top_level = true
+position = Vector2(3069, 731)
+
+[node name="Node2D2" parent="." instance=ExtResource("3_nxigg")]
+position = Vector2(3954, -4211)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+offset_right = 74.0
+offset_bottom = 40.0
+scale = Vector2(2.94113, 2.94724)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Speed = 0"
+
+[node name="Node2D3" parent="." instance=ExtResource("3_nxigg")]

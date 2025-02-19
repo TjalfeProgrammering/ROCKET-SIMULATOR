@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyugjgquu7ot7"]
+
+[ext_resource type="Texture2D" uid="uid://buanwrkdlwqgn" path="res://space background.jpg" id="1_75hku"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1573, -912)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.5, 0.5)
+scroll_offset = Vector2(-254, 1492)
+repeat_size = Vector2(300, 300)
+repeat_times = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(49.5, 249.5)
+scale = Vector2(2.09375, 3.11389)
+texture = ExtResource("1_75hku")
