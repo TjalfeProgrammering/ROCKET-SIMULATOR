@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwh84s8rk7thi"]
+[gd_scene load_steps=5 format=3 uid="uid://de78f0bu1jyv3"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_0fqle"]
-[ext_resource type="PackedScene" uid="uid://jlxutlyjlnns" path="res://player.tscn" id="1_ttfep"]
-[ext_resource type="PackedScene" uid="uid://g620ogclnc8t" path="res://platform.tscn" id="2_w8ku3"]
-[ext_resource type="PackedScene" uid="uid://dyugjgquu7ot7" path="res://background.tscn" id="3_nxigg"]
+[ext_resource type="PackedScene" uid="uid://i5iktw4bcfj5" path="res://player.tscn" id="1_ttfep"]
+[ext_resource type="PackedScene" uid="uid://6vuwyujknd72" path="res://platform.tscn" id="2_w8ku3"]
+[ext_resource type="PackedScene" uid="uid://dl2ktsn4gx1tj" path="res://background.tscn" id="3_nxigg"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0fqle")
@@ -16,7 +16,7 @@ scale = Vector2(0.30862, 0.28673)
 
 [node name="Camera2D" type="Camera2D" parent="RigidBody2D"]
 
-[node name="Node2D" parent="." instance=ExtResource("2_w8ku3")]
+[node name="ground" parent="." instance=ExtResource("2_w8ku3")]
 top_level = true
 position = Vector2(3069, 731)
 
@@ -36,5 +36,13 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Speed = 0"
+
+[node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Altitude = "
+
+[node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fuel= 100%"
 
 [node name="Node2D3" parent="." instance=ExtResource("3_nxigg")]

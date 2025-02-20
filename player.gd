@@ -9,6 +9,7 @@ extends CharacterBody2D
 @export var max_velocity: float = 800.0  # Max speed limit
 
 var rotation_speed: float = 0.0
+var main_script: Node
 
 func _physics_process(_delta: float) -> void:
 	velocity.y += gravity * _delta
