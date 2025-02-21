@@ -1,12 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://de78f0bu1jyv3"]
+[gd_scene load_steps=6 format=3 uid="uid://de78f0bu1jyv3"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_0fqle"]
-[ext_resource type="PackedScene" uid="uid://i5iktw4bcfj5" path="res://player.tscn" id="1_ttfep"]
+[ext_resource type="PackedScene" uid="uid://b8miaecswm3eq" path="res://player.tscn" id="1_ttfep"]
 [ext_resource type="PackedScene" uid="uid://6vuwyujknd72" path="res://platform.tscn" id="2_w8ku3"]
 [ext_resource type="PackedScene" uid="uid://dl2ktsn4gx1tj" path="res://background.tscn" id="3_nxigg"]
+[ext_resource type="PackedScene" uid="uid://c4yko44y3koj6" path="res://Startmenu.tscn" id="5_k5nty"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0fqle")
+
+[node name="Menu" parent="." instance=ExtResource("5_k5nty")]
 
 [node name="RigidBody2D" parent="." instance=ExtResource("1_ttfep")]
 top_level = true

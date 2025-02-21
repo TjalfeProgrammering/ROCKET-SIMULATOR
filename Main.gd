@@ -24,7 +24,7 @@ func _physics_process(delta):
 		label_3.text = "Fuel: " + str(round(fuel)) + "%"
 	
 	if fuel <= 0:
-		character_body.stop_moving()
+		character_body.disable_controls()
 	
 	# Update the label with the fall speed, only if falling (positive y velocity)
 	if fall_speed > 0:

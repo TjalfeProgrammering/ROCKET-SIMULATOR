@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4yko44y3koj6"]
+
+[ext_resource type="Script" path="res://startmenu.gd" id="1_pixv4"]
+[ext_resource type="Texture2D" uid="uid://b2vbt8r72cm6a" path="res://photo-1475274047050-1d0c0975c63e.jpeg" id="2_1daif"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pixv4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16.5, -42)
+scale = Vector2(4.24219, 2.21875)
+texture = ExtResource("2_1daif")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -29.0
+offset_right = 23.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Space Game"
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "The Rocket needs to land with a speed slower than 200 Pixels a second to land safely."
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
